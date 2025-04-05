@@ -1,5 +1,6 @@
 /JavaApplication2/nbproject/private/
 /JavaApplication2/build/
+<<<<<<< Updated upstream
 /HourMinSec/nbproject/private/
 /HourMinSec/build/
 /CircleArea/nbproject/private/
@@ -9,3 +10,7 @@
 /calculatioInterest/nbproject/private/
 /calculatioInterest/build/
 /calculatioInterest/dist/
+=======
+/AnnualInterestRate/nbproject/private/
+/AnnualInterestRate/build/
+>>>>>>> Stashed changes
