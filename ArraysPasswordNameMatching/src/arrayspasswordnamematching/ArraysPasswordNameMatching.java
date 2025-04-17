@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class ArraysPasswordNameMatching {
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
 
-        String[] names = {"Suprova", "Shemanto", "Simki", "Safwan", "Shawon"};
-        int[] passwords = {10, 20, 30, 40, 50};
+        Scanner s = new Scanner(System.in);
 
         System.out.println("Enter user name.");
         String name = s.next();
+
+        String[] names = {"Suprova", "Shemanto", "Simki", "Safwan", "Shawon"};
+        int[] passwords = {10, 20, 30, 40, 50};
 
         for (int i = 0; i < names.length; i++) {
 
