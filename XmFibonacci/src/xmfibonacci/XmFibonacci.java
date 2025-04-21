@@ -9,7 +9,8 @@ public class XmFibonacci {
 
         System.out.println("Enter Number.");
         long input = s.nextLong();
-
+  System.out.println("-------------------------------");
+        System.out.println("Fibonacci Numbers are : ");
         int num1 = 0;
         int num2 = 1;
         int sum = 0;
@@ -27,8 +28,8 @@ public class XmFibonacci {
             num2 = sum;
 
         }
-        System.out.println("----------------");
-        System.out.println("Total " + totalSum);
+        System.out.println("-------------------------------");
+        System.out.println("Total Fibonacci Sum  = " + totalSum + ".");
     }
 
 }
