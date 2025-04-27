@@ -27,10 +27,14 @@ public class ObjClassPractice {
          w.setColour("orange");
          System.out.println(w.getColour());
          
+        justPractice();
          
         
     }
+    public static void justPractice(){
     
+        System.out.println("dekhte chai ans ase kina");
+    }
     
    public static String objAndClass (){
    
