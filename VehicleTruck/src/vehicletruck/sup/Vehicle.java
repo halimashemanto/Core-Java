@@ -49,7 +49,7 @@ public class Vehicle {
 
    public double getSalePrice() {
        
-    return regularPrice;
+    return regularPrice;  
    
    }
   

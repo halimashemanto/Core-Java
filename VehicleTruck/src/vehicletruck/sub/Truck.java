@@ -36,8 +36,11 @@ public class Truck extends Vehicle {
       
         
         if (weight > 2000) {
+            
            return (double) (super.getRegularPrice() - (super.getRegularPrice() * .10));
-        } else {
+        } 
+        
+        else {
             return super.getRegularPrice();
         }
 

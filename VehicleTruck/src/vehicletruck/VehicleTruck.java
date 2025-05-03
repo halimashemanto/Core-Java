@@ -3,7 +3,6 @@ package vehicletruck;
 
 import java.util.Scanner;
 import vehicletruck.sub.Truck;
-import vehicletruck.sup.Vehicle;
 
 
 public class VehicleTruck {
