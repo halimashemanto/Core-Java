@@ -35,7 +35,12 @@ public class SavingsAccount extends Account{
     @Override
     public void accountDetails() {
         super.accountDetails(); 
-        System.out.println("InterestRate"+ "  : "  +interestRate+ "\n" + "Deposite"+ "  : " + super.getBalance()*interestRate + "\n");
+        System.out.println("InterestRate"+ "  : "  +interestRate+ "\n");
+    }
+
+    @Override
+    public void deposit() {
+        super.deposit(); 
     }
     
     

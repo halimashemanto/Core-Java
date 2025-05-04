@@ -14,9 +14,10 @@ public class BankSysten {
         CurrentAccount ca = new CurrentAccount();
         
         sa.setAccountNumber(123456);
-        sa.setBalance(50000000);
+        sa.setBalance(50000);
         sa.setInterestRate(.05);
         sa.accountDetails();
+        sa.deposit();
         
         System.out.println("------");
         
@@ -25,7 +26,7 @@ public class BankSysten {
         ca.setOverDraftLimit(300000);
         
         ca.accountDetails();
-        
+        ca.deposit();
     }
     
 }

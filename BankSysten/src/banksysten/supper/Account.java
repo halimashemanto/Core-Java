@@ -39,4 +39,8 @@ public class Account {
         System.out.println( "AccountNumber" + "  : " + accountNumber + "\n"+ "Balance" + "  : "  + balance + "\n");
         
     }
+    public void deposit(){
+    
+        System.out.println("Deposite"+ "  : " + (balance+balance));
+    }
 }

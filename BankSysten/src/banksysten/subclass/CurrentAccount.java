@@ -37,6 +37,11 @@ public class CurrentAccount  extends Account {
         
         System.out.println("overDraftLimit"+ "  : "  + overDraftLimit + "\n" + "Withdraw" + "  : " + (super.getBalance()-overDraftLimit));
     }
+
+    @Override
+    public void deposit() {
+        super.deposit(); 
+    }
     
     
 }
