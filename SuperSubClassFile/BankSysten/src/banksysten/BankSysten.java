@@ -17,7 +17,7 @@ public class BankSysten {
         sa.setBalance(50000);
         sa.setInterestRate(.05);
         sa.accountDetails();
-        sa.deposit();
+       sa.printDetails();
         
         System.out.println("------");
         
@@ -26,7 +26,7 @@ public class BankSysten {
         ca.setOverDraftLimit(300000);
         
         ca.accountDetails();
-        ca.deposit();
+        ca.printDetails();
     }
     
 }

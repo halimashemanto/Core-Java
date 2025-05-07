@@ -1,10 +1,9 @@
-
 package banksysten.subclass;
 
 import banksysten.supper.Account;
 
+public class SavingsAccount extends Account {
 
-public class SavingsAccount extends Account{
     private double interestRate;
 
     public SavingsAccount() {
@@ -34,14 +33,14 @@ public class SavingsAccount extends Account{
 
     @Override
     public void accountDetails() {
-        super.accountDetails(); 
-        System.out.println("InterestRate"+ "  : "  +interestRate+ "\n");
+        super.accountDetails();
+        System.out.println("InterestRate" + "  : " + interestRate + "\n");
     }
 
     @Override
-    public void deposit() {
-        super.deposit(); 
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Interest Rate: " + interestRate + "%");
     }
-    
-    
+
 }

@@ -1,9 +1,9 @@
-
 package banksysten.subclass;
 
 import banksysten.supper.Account;
 
-public class CurrentAccount  extends Account {
+public class CurrentAccount extends Account {
+
     private double overDraftLimit;
 
     public CurrentAccount() {
@@ -33,15 +33,17 @@ public class CurrentAccount  extends Account {
 
     @Override
     public void accountDetails() {
-        super.accountDetails(); 
-        
-        System.out.println("overDraftLimit"+ "  : "  + overDraftLimit + "\n" + "Withdraw" + "  : " + (super.getBalance()-overDraftLimit));
+        super.accountDetails();
+
+        System.out.println("overDraftLimit" + "  : " + overDraftLimit + "\n" + "Withdraw" + "  : " + (super.getBalance() - overDraftLimit));
     }
 
     @Override
-    public void deposit() {
-        super.deposit(); 
+    public void printDetails() {
+        super.printDetails();
+
+        System.out.println("Overdraft Limit: $" + overDraftLimit);
+
     }
-    
-    
+
 }
