@@ -27,7 +27,6 @@ public class ImproveBubbleSort {
         b = false;
             for (int j = 0; j < bubble.length - i; j++) {
 
-                // {50,10,20,5,8}
                 if (bubble[j] > bubble[j + 1]) {
 
                     int temp = bubble[j];
