@@ -1,30 +1,22 @@
 
 package threadabc;
 
-import threadabc.she.Shemanto;
-import threadabc.ss.Suprova;
-
 
 public class ThreadABC {
 
-
+  
     public static void main(String[] args) {
+  
+        Runnable r = new She(20);
+        Runnable n = new Sup(20, "shemanto");
         
-           Runnable a=new Shemanto();
-        Runnable b=new Suprova();
-        Runnable c=new Shemanto();
-        
-        
-        Thread a1=new Thread(a);
-        Thread b1=new Thread(b);
-        Thread c1=new Thread(c);
-        
-        c1.start();
-        a1.start();
-        
-        b1.start();
-
-
+        Thread s =new Thread(r);
+        Thread ss =new Thread(n);
+      
+   
+       s.start();
+       ss.start();
+     
     }
     
 }
