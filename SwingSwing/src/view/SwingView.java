@@ -51,7 +51,7 @@ public class SwingView extends javax.swing.JFrame {
         btnGEdit = new javax.swing.JButton();
         btnGSave = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableGirls = new javax.swing.JTable();
+        tblGirlsProduct = new javax.swing.JTable();
         tab3 = new javax.swing.JPanel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jLabel4 = new javax.swing.JLabel();
@@ -216,7 +216,7 @@ public class SwingView extends javax.swing.JFrame {
 
         btnGSave.setText("Save");
 
-        tableGirls.setModel(new javax.swing.table.DefaultTableModel(
+        tblGirlsProduct.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -227,7 +227,7 @@ public class SwingView extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(tableGirls);
+        jScrollPane1.setViewportView(tblGirlsProduct);
 
         javax.swing.GroupLayout tab2Layout = new javax.swing.GroupLayout(tab2);
         tab2.setLayout(tab2Layout);
@@ -515,8 +515,8 @@ public class SwingView extends javax.swing.JFrame {
     private javax.swing.JPanel tab4;
     private javax.swing.JPanel tab5;
     private javax.swing.JTabbedPane tabMain;
-    private javax.swing.JTable tableGirls;
     private javax.swing.JPanel tabs;
+    private javax.swing.JTable tblGirlsProduct;
     private javax.swing.JTextField txtGCosmetics;
     private javax.swing.JTextField txtGDress;
     private javax.swing.JTextField txtGHairAccosories;
