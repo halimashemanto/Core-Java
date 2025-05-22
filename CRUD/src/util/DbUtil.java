@@ -1,5 +1,4 @@
 
-
 package util;
 
 import java.sql.Connection;
@@ -8,12 +7,10 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
-
 public class DbUtil {
     private Connection con = null;
     private String url = "jdbc:mysql://localhost:3306/advancejava";
-    private String user = "root"; 
+    private String user = "root";
     private String password = "1234";
     private String driver = "com.mysql.cj.jdbc.Driver";
     
@@ -26,6 +23,5 @@ public class DbUtil {
         }
         return con;
 }
-
     
 }

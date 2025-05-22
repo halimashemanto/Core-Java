@@ -71,14 +71,13 @@ public class AdvanceJavaForEvedence {
                 String email = rs.getString("email");
                 double salary = rs.getDouble("salary");
 
-                               System.out.println("Id : " + id + "Name : " + name + "E-mail : " + email + "Salary : " + salary);
+                System.out.println("Id : " + id + "Name : " + name + "E-mail : " + email + "Salary : " + salary);
 
             }
-            
-             ps.executeQuery();
-                ps.close();
-                du.getCon().close();
 
+            ps.executeQuery();
+            ps.close();
+            du.getCon().close();
 
         } catch (SQLException ex) {
             Logger.getLogger(AdvanceJavaForEvedence.class.getName()).log(Level.SEVERE, null, ex);
