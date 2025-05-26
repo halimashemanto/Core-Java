@@ -32,19 +32,20 @@ public class PracticeCRUD {
         showAllEmp();
     }
 
-    public static void saveEmp(String name, String email, double salary) {
-        sql = "insert into emp(name,email,salary)values(?,?,?)";
+    public static void saveEmp(String name, String designation, double salary) {
+        sql = "insert into employee(name,designation,salary)values(?,?,?)";
         try {
             ps = db.getCon().prepareStatement(sql);
 
             ps.setString(1, name);
-            ps.setString(2, email);
+            ps.setString(2, designation);
             ps.setDouble(3, salary);
 
             System.out.println("Save Confirm.");
             System.out.println("----------------------");
 
             ps.executeUpdate();
+            
             ps.close();
 
             db.getCon().close();
@@ -55,19 +56,19 @@ public class PracticeCRUD {
     }
 
     public static void showAllEmp() {
-        sql = "select * from emp ";
+        sql = "select * from employee ";
         try {
             ps = db.getCon().prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
                 String name = rs.getString("name");
-                String email = rs.getString("email");
+                String designation = rs.getString("designation");
                 double salary = rs.getDouble("salary");
                 int id = rs.getInt("id");
 
                 System.out.println("Id : " + id + "\n" + "Name : " + name + "\n"
-                        + "Email : " + email + "\n" + "Salary : " + salary + "\n");
+                        + "Email : " + designation + "\n" + "Salary : " + salary + "\n");
 
             }
 
@@ -82,7 +83,7 @@ public class PracticeCRUD {
     }
 
     public static void deleteEmp(int id) {
-        sql = "delete from emp where id = ?";
+        sql = "delete from employee where id = ?";
         try {
             ps = db.getCon().prepareStatement(sql);
             ps.setInt(1, id);
@@ -97,13 +98,13 @@ public class PracticeCRUD {
 
     }
 
-    public static void updateEmp(String name, String email, double salary, int id) {
-        sql = "update emp set name=?,email=?,salary=? where id=?";
+    public static void updateEmp(String name, String designation, double salary, int id) {
+        sql = "update employee set name=?,designation=?,salary=? where id=?";
         try {
             ps = db.getCon().prepareStatement(sql);
 
             ps.setString(1, name);
-            ps.setString(2, email);
+            ps.setString(2, designation);
             ps.setDouble(3, salary);
             ps.setInt(4, id);
 
