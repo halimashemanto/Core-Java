@@ -52,7 +52,7 @@ public class StudentDao {
 
     public static int saveStudent(Student s) {
 
-        if (!(s.getName().isEmpty())) {
+        if (!(s.getName().isEmpty())){
 
         }
 

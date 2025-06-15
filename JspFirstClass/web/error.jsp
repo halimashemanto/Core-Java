@@ -1,4 +1,4 @@
-<h1 class="bg-denger">Student Information Not Saved</h1>
+<h1 class="bg-danger">Student Information Not Saved</h1>
 
 
 

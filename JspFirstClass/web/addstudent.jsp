@@ -1,15 +1,21 @@
-<jsp:useBean class="model.Student" id="ads" />
- 
-<%@page import="dao.StudentDao" %>
+<jsp:useBean class="model.Student" id="s" />
 
-<jsp:setProperty name="ads" property="*" />
+<%@page import="Dao.StudentDao" %>
+
+<jsp:setProperty name="s" property="*" />
 
 <%
-    int result = EmployeeDao.saveAllEmployee(ads); // Missing semicolon
+    int result = StudentDao.saveStudent(s); 
 
     if(result > 0){  
-        response.sendRedirect("index.jsp");
-    } else {
-        response.sendRedirect("error.jsp"); 
+    
+    response.sendRedirect("index.jsp");
+        
+    } 
+    else {
+         response.sendRedirect("error.jsp");
+        
     }
 %>
+
+
