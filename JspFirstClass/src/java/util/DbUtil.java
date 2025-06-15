@@ -15,15 +15,20 @@ public class DbUtil {
     private static String password = "1234";
     private static String driver = "com.mysql.cj.jdbc.Driver";
 
-    public Connection getCon() {
+    public Connection getCon(){
        
+           
              try {
-                  Class.forName(driver);
-                 con = DriverManager.getConnection(url, user, password);
-                 
-             } catch ( ClassNotFoundException | SQLException ex) {
+                 Class.forName(driver);
+                    con = DriverManager.getConnection(url, user, password);
+                
+             } catch (ClassNotFoundException ex  ) {
+                 Logger.getLogger(DbUtil.class.getName()).log(Level.SEVERE, null, ex);
+             } catch (SQLException ex) {
                  Logger.getLogger(DbUtil.class.getName()).log(Level.SEVERE, null, ex);
              }
+               
+            
 
         
         return con;

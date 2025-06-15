@@ -1,5 +1,5 @@
-<%@taglib prefix="e" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page import="model.EmployeeEntity" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="model.Employee" %>
 <%@page import="dao.EmployeeDao" %>
 <%@page import="java.util.*" %>
 
@@ -7,7 +7,7 @@
 
 
 <%
-    List<EmployeeEntity> list = EmployeeDao.getAllEmployee();
+    List<Employee> list = EmployeeDao.getAllEmployee();
     request.setAttribute("list",list);
     
 %>
@@ -46,6 +46,8 @@
                 <td>${e.getId()}</td>
                 <td>${e.getName()}</td>
                 <td>${e.getDesignation()}</td>
+                <td>${e.getSalary()}</td>
+                <td></td>
 
             </tr>
 

@@ -21,7 +21,7 @@
 
             <div>
                 <label for="exampleInputEmail1" class="form-label">Designation</label>
-                <input type="text" class="form-control" id="designtion" name="designtion" >
+                <input type="text" class="form-control" id="designtion" name="designation" >
             </div>        
        
         
@@ -36,7 +36,7 @@
           <div>
                 <button type="submit" class="btn btn-success text-center" >Save</button>
 
-            </div>
+            </div> < br>   
                 
                 
 

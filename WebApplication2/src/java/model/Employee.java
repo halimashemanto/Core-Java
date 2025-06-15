@@ -1,23 +1,23 @@
 
 package model;
 
-public class EmployeeEntity {
+public class Employee {
     private int id;
     private String name;
     private String designation;
     private double salary;
 
-    public EmployeeEntity() {
+    public Employee() {
     }
 
-    public EmployeeEntity(int id, String name, String designation, double salary) {
+    public Employee(int id, String name, String designation, double salary) {
         this.id = id;
         this.name = name;
         this.designation = designation;
         this.salary = salary;
     }
 
-    public EmployeeEntity(String name, String designation, double salary) {
+    public Employee(String name, String designation, double salary) {
         this.name = name;
         this.designation = designation;
         this.salary = salary;
