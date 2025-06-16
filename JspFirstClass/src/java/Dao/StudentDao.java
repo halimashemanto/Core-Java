@@ -33,12 +33,14 @@ public class StudentDao {
                         rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("email"),
-                        rs.getString("contacNo"),
+                        rs.getString("contactNo"),
                         rs.getString("subject"),
                         rs.getString("gender")
                 );
                 students.add(s);
             }
+            
+            System.out.println(students);
 
             ps.close();
             rs.close();
@@ -123,7 +125,7 @@ public class StudentDao {
         } catch (SQLException ex) {
             Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
     }
 
     public static Student getById(int id) {
@@ -150,6 +152,8 @@ public class StudentDao {
             rs.close();
             ps.close();
             db.getCon().close();
+            
+            System.out.println(s);
 
         } catch (SQLException ex) {
             Logger.getLogger(StudentDao.class.getName()).log(Level.SEVERE, null, ex);

@@ -49,7 +49,7 @@
                     <option value="Finance">Finance</option>
                 </select>
             </div>
-
+            <div class="row mt-3">
             <div class="col-md-6">
                 <label for="exampleInputEmail1" class="form-label">Gender</label>
                 <div class="form-check">

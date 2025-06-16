@@ -1,5 +1,5 @@
 <jsp:useBean class="model.Student" id="d" />
-<%@page  import="dao.StudentDao" %>
+<%@page  import="Dao.StudentDao" %>
 <jsp:setProperty  name="d" property="*" />
 
 <%

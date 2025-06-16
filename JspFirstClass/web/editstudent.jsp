@@ -1,5 +1,5 @@
 <jsp:useBean class="model.Student"  id="es" />
-<%@page  import="dao.StudentDao" %>
+<%@page  import="Dao.StudentDao" %>
 <jsp:setProperty  name="es" property="*" />
 
 <%
@@ -8,9 +8,9 @@
         if(result > 0){
              response.sendRedirect("index.jsp");
     
-            }
-            else{
-    response.sendRedirect("error.jsp");
+    }
+        else{
+             response.sendRedirect("error.jsp");
     }
 
 

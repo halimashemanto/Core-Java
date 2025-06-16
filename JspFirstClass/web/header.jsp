@@ -23,6 +23,7 @@
         <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
         <a class="nav-link" href="addstudentform.jsp">Add Student</a>
         <a class="nav-link" href="editstudentform.jsp">Update Student</a>
+         <a class="nav-link" href="delete.jsp">Remove Student</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </div>
     </div>

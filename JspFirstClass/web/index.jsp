@@ -47,8 +47,8 @@
                     <td>
                         <a href="editstudentform.jsp?id=${s.id}" class="btn btn-primary">Edit</a>
                         
-                        <a href="deletestudent.jsp?id=${s.id}" class="btn btn-danger"                           
-                           onclick="return confirm('Do you want to update this student information?');">Delete</a>
+                        <a href="delete.jsp?id=${s.id}" class="btn btn-danger"                           
+                           onclick="return confirm('Do you want to remove this student information?');">Delete</a>
                     </td>
 
 

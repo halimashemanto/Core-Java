@@ -1,11 +1,11 @@
 
 <%@page import="model.Student" %>
-<%@page import="dao.StudentDao" %>
+<%@page import="Dao.StudentDao" %>
 
 
 <%
-    String id=request.getParameter("id");    
-    Student s=StudentDao.getById(Integer.parseInt(id));
+    String id = request.getParameter("id");    
+    Student s = StudentDao.getById(Integer.parseInt(id));
 
 %>
 
@@ -17,28 +17,28 @@
     <div class="bg-success text-center">
         <h1 class="jumborton">Update Student</h1>
     </div>
-    <!--    start form-->
+ 
     <form action="editstudent.jsp"  method="post">
         <input type="hidden" name="id" value="<%=s.getId()%>" />
 
         <div class="row">
             <div class="col-md-6">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" value="<%=s.getName()%>" placeholder="Full Name">
+                <input type="text" class="form-control" id="name" name="name" value="<%=s.getName()%>" >
             </div>
 
             <div class="col-md-6">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" name="email" value="<%=s.getEmail()%>" placeholder="example@gmail.com">
+                <input type="text" class="form-control" id="email" name="email" value="<%=s.getEmail()%>">
             </div>        
         </div>
-        <!-- start 2nd row-->
+    
         <div class="row mt-3">
             <div class="col-md-6">
                 <label  class="form-label">Subject</label>
                 <select class="form-select" name="subject" aria-label="Default select example">
                     <option disabled>Select Anyone</option>
-                    <option value="=Accounting" <%= "Accounting".equals(s.getSubject()) ? "selected" : "" %>>Accounting</option>
+                    <option value="Accounting" <%= "Accounting".equals(s.getSubject()) ? "selected" : "" %>>Accounting</option>
                     <option value="Management" <%= "Management".equals(s.getSubject()) ? "selected" : "" %>>Management</option>
                     <option value="Marketing" <%= "Marketing".equals(s.getSubject()) ? "selected" : "" %>>Marketing</option>
                     <option value="Finance" <%= "Finance".equals(s.getSubject()) ? "selected" : "" %>>Finance</option>
@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-md-6">
                 <label for="exampleInputEmail1" class="form-label">Contact Number</label>
-                <input type="text" class="form-control" id="contactNo" name="contactNo" value="<%=s.getContactNo()%>" placeholder="+880159325884">
+                <input type="text" class="form-control" id="contactNo" name="contactNo" value="<%=s.getContactNo()%>" >
             </div>
 
         </div>
@@ -81,7 +81,7 @@
         </div>
     </form>
 
-    <!--end form    -->
+  
 </div>
 
 
