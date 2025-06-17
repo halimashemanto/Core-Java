@@ -120,6 +120,7 @@ public class EmpDao {
         Emp e = null;
 
         sql = "select * from emp where id = ?";
+               
 
         try {
             ps = db.getCon().prepareStatement(sql);
